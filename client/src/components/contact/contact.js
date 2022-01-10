@@ -1,0 +1,1 @@
+import Styles from './style.module.scss'
