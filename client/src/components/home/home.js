@@ -2,7 +2,7 @@ import Styles from './style.module.scss'
 
 export default () => {
     return (
-        <div className={Styles.homeContainer}>
+        <div className='section'>
             <p>HOLA MUNDOOO</p>
         </div>
     )

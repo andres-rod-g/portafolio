@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Slabo';
+  font-style: normal;
+  src: local('Slabo'), url('./fonts/Slabo13px-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Thasadith';
+  font-style: normal;
+  src: local('Thasadith'), url('./fonts/Thasadith-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Vibur';
+  font-style: normal;
+  src: local('Vibur'), url('./fonts/Vibur-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Thabit';
+  font-style: normal;
+  src: local('Thabit'), url('./fonts/Thabit.ttf') format('truetype');
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +56,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.pageBody {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Slabo;
+  font-weight: lighter;
+  font-size:larger;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.itemsContainer {
+  text-align: center;
+}
+
+.itemsContainer button {
+  cursor: pointer;
+  padding: 8px;
+  font-family: Thasadith;
+  font-weight:lighter;
+  font-size: medium;
+  width: 190px;
+  color: white;
+  background-color: #282c3400;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.fp-controlArrow{
+  visibility: hidden;
+}
+
+.fp-next{
+  background-color: black;
 }

@@ -1,0 +1,49 @@
+$background: #F8F7FF;
+$fontColor: #0D1323;
+
+.about {
+    background-color: $background;
+}
+
+.sectionContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: Vibur;
+        font-size: 60px;
+        color: $fontColor;
+        text-shadow: 0px 3px 4px #0d13238a;
+    }
+
+    p {
+        color: $fontColor;
+        text-shadow: 0px 3px 4px #0d132350;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 120px;
+
+    h2 {
+        font-family: Vibur;
+        font-size: 25px;
+        text-shadow: 0px 3px 4px #0d13234b;
+    }
+
+    p {
+        margin: 5px;
+        font-family: Thabit;
+    }
+}
