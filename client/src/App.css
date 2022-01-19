@@ -18,6 +18,21 @@
   font-style: normal;
   src: local('Thabit'), url('./fonts/Thabit.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Voltaire';
+  font-style: normal;
+  src: local('Voltaire'), url('./fonts/Voltaire.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  src: local('Urbanist'), url('./fonts/Urbanist.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Vampiro';
+  font-style: normal;
+  src: local('Vampiro'), url('./fonts/VampiroOne.ttf') format('truetype');
+}
 
 .App {
   text-align: center;
@@ -107,4 +122,8 @@
 
 .fp-next{
   background-color: black;
+}
+
+p {
+  margin: 5px;
 }

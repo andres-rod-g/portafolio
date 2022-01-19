@@ -9,21 +9,29 @@ import Certs from './sections/certs';
 import Contact from './sections/contact';
 
 export default () => {
+    const onLeave = (origin, destination, direction) => {
+        const whereOn = origin.index
+        const goingTo = destination.index
+        console.log(whereOn)
+        console.log(goingTo)
+    } 
+    
     return (
+
         <ReactFullpage
         //fullpage options
             licenseKey = {'YOUR_KEY_HERE'}
             scrollingSpeed = {1000} /* Options here */
-
+            onLeave={onLeave.bind(this)}
             render={({ state, fullpageApi }) => {
             return (
                 <ReactFullpage.Wrapper>
-                <MainSection/>
-                <About/>
-                <Knowledge/>
-                <Projects/>
-                <Certs/>
-                <Contact/>
+                    <MainSection fullpageApi={fullpageApi}/>
+                    <About/>
+                    <Knowledge/>
+                    <Projects/>
+                    <Certs/>
+                    <Contact/>
                 </ReactFullpage.Wrapper>
             );
             }}

@@ -1,4 +1,5 @@
 import './index.css';
+import '@fullpage/react-fullpage'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
@@ -13,8 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="/" element={<Portfolio />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>,

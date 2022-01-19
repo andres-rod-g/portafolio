@@ -1,10 +1,7 @@
 $background: #F8F7FF;
 $fontColor: #0D1323;
 
-.about {
-    background-color: $background;
-}
-
+// GENERAL
 .sectionContent {
     display: flex;
     flex-direction: column;
@@ -21,6 +18,32 @@ $fontColor: #0D1323;
     p {
         color: $fontColor;
         text-shadow: 0px 3px 4px #0d132350;
+    }
+}
+
+.sectionBlackContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: Vibur;
+        font-size: 60px;
+        color: $background;
+        text-shadow: 0px 3px 4px #F8F7FF8a;
+    }
+
+    p {
+        color: $background;
+        text-shadow: 0px 3px 4px #F8F7FF50;
+    }
+
+    h2 {
+        font-family: Vibur;
+        color: $background;
+        font-size: 25px;
+        text-shadow: 0px 3px 4px #F8F7FF4b;
     }
 }
 
@@ -45,5 +68,191 @@ $fontColor: #0D1323;
     p {
         margin: 5px;
         font-family: Thabit;
+    }
+}
+
+// HOME
+.dividerHomeSVG {
+    position: absolute;
+    bottom: -0.1vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 135px;
+    }
+}
+.nameDivider {
+    fill: #222831;
+}
+
+// ABOUT
+.about {
+    background: url('../../resources/images/photo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins';
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+.aboutContainer {
+    max-width: 500px;
+    text-align: center;
+}
+
+.dividerAboutSVG {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 135px;
+    }
+    
+}
+
+.homeDivider {
+    fill: #DDDDDD;
+}
+
+// KNOWLEDGE
+.currentlyLearning {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dividerKnowledgeSVG {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+    svg {
+        position: relative;
+        display: block;
+        width: calc(228% + 1.3px);
+        height: 90px;
+    }
+    
+}
+.knowledgeDivider {
+    fill: #F05454;
+}
+
+// PROJECTS
+.dividerProjectsSVG {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+    svg {
+        position: relative;
+        display: block;
+        width: calc(198% + 1.3px);
+        height: 60px;
+    }
+}
+
+.projectsDivider {
+    fill: #30475E;
+}
+
+// CERTS
+.images {
+    max-width: 800px;
+}
+
+.image {
+    max-width: 800px;
+    max-height:auto;
+}
+
+.dividerCertsSVG {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+    svg {
+        position: relative;
+        display: block;
+        width: calc(129% + 1.3px);
+        height: 76px;
+    }
+    
+}
+
+.certsDivider {
+    fill: #222831;
+}
+
+// CONTACT
+.contactSection {
+    p {
+        font-family: Voltaire;
+    }
+
+    h2 {
+        font-family: Vibur;
+    }
+
+    button {
+        padding: 3px;
+        background-color: $background;
+        border-radius: 8px;
+        border: 0px;
+        color: $fontColor; 
+        cursor: pointer;
+        margin: 4px;
+        width: 40px;
+        height: 40px;
+
+        font-size: 25px;
+
+        svg {
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+}
+
+// == RESPONSIVE ==
+@media (max-width: 921px) {
+    .images {
+        max-width: 500px;
+    }
+    
+    .image {
+        max-width: 500px;
+        max-height:auto;
     }
 }
