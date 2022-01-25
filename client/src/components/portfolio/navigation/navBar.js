@@ -9,6 +9,7 @@ import { optionsData } from './MenuOptions'
 
 export default ({isVisible, onWhite, setTravelToPage, selected, toggleActive, setToggleActive}) => {
     const navBarController = useAnimation()
+    const navMobileController = useAnimation()
 
     const [anim, setAnim] = useState(false)
 
@@ -29,6 +30,12 @@ export default ({isVisible, onWhite, setTravelToPage, selected, toggleActive, se
     } else {
         navBarController.start({color: '#ffffff', transition: {delay: 0.5, duration: 0.5}})
         console.log('OnBlack')
+    }
+
+    if (toggleActive) {
+        navMobileController.start({right: 0, transition: {duration: 0.5}})
+    } else {
+        navMobileController.start({right: '-300px', transition: {duration: 0.5}})
     }
 
 
@@ -61,6 +68,14 @@ export default ({isVisible, onWhite, setTravelToPage, selected, toggleActive, se
                             : <motion.div transition={{duration: 0.5}} layoutId='toggle'><FontAwesomeIcon icon={faTimes}/></motion.div>
                     }
                 </motion.div>
+                    <motion.div initial={{right: '-300px'}} className={Styles.mobileNav} animate={navMobileController}>
+                        {
+                            optionsData.map((option, index) => {
+                                if (index === (optionsData.length -1)) return <a onClick={() => {if(toggleActive) setTravelToPage(index); setToggleActive(false)}}><p>{option.optionName}</p></a>
+                                else return <a onClick={() => {if(toggleActive) setTravelToPage(index); setToggleActive(false);}} style={{borderBottom: '1px solid #23232350'}}><p>{option.optionName}</p></a>
+                            })
+                        }
+                    </motion.div>
             </motion.div>
         </nav>
     )
