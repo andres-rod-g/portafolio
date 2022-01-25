@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const Card = ({title, description, image, bgImage, bgColor, btnFontColor, btnColor, fontColor, github, url}) => {
     return (
-        <motion.div className={Styles.card} initial={{scale: 1}} whileHover={{scale: 1.05, transition: {duration: 0.25}}} style={bgImage ? {background: `url(${bgImage}) no-repeat center center`, backgroundSize: 'cover', color: fontColor} : {backgroundColor: bgColor, color: fontColor}}>
+        <motion.div className={Styles.card} initial={{scale: 1}} whileHover={{scale: 1.025, transition: {duration: 0.25}}} style={bgImage ? {background: `url(${bgImage}) no-repeat center center`, backgroundSize: 'cover', color: fontColor} : {backgroundColor: bgColor, color: fontColor}}>
             <div className={Styles.cardContent}>
                 <div className={Styles.title}>
                     {
@@ -22,13 +22,13 @@ const Card = ({title, description, image, bgImage, bgColor, btnFontColor, btnCol
             <div className={Styles.buttons}>
                 {
                     url
-                        ? <a href={url} target='_blank' style={{backgroundColor: btnColor, color: btnFontColor}}><p>Visit Page</p></a>
+                        ? <motion.a initial={{borderRadius: '16px'}} whileHover={{borderRadius: '30px', scale: 1.1}} whileTap={{borderRadius: '10px', scale: 0.9}} href={url} target='_blank' style={{backgroundColor: btnColor, color: btnFontColor}}><p>Visit Page</p></motion.a>
                         : null
                 }
                 
                 {
                     github
-                        ? <a href={github} target='_blank' style={{backgroundColor: '#24292E', color: 'white'}}><p>GitHub</p></a>
+                        ? <motion.a initial={{borderRadius: '16px'}} whileHover={{borderRadius: '30px', scale: 1.1}} whileTap={{borderRadius: '10px', scale: 0.9}} href={github} target='_blank' style={{backgroundColor: '#24292E', color: '#ffffff'}}><p>GitHub</p></motion.a>
                         : null
                 }
                 
