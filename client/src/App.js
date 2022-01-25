@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 import './fonts/Slabo13px-Regular.ttf'
 import './fonts/Thasadith-Regular.ttf'

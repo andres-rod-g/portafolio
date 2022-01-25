@@ -33,6 +33,11 @@
   font-style: normal;
   src: local('Vampiro'), url('./fonts/VampiroOne.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Trispace';
+  font-style: normal;
+  src: local('Trispace'), url('./fonts/Trispace.ttf') format('truetype');
+}
 
 .App {
   text-align: center;
@@ -127,3 +132,4 @@
 p {
   margin: 5px;
 }
+

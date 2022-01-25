@@ -10,7 +10,7 @@ export default () => {
                 </motion.div>
                 <motion.div initial={{opacity: 0, scale: 1.5}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 1, delay: 1.5}} viewport={{once: true}}>
                     <div className={Styles.aboutContainer}>
-                        <p>Andrés Rodríguez is Colombian. Since he was a child, he was passionate about the world of technology, and especially in programming. With his 18 years old, he already has 4 certificates of Web programming in FreeCodeCamp, where 300 hours of learning are ratified for each certificate, being one emphasized in Responsive Design, another in JavaScritp, FrontEnd Libraries and finally, in BackEnd & APIs. He has done multiple projects. From Video Games, to Web Pages and Web Tools.</p>
+                        <p>Andrés Rodríguez is Colombian. Since he was a child, he was passionate about the world of technology, and especially in programming. With his 18 years old, he already has 4 certificates of Web programming in FreeCodeCamp, where 300 hours of learning are ratified for each certificate, being one emphasized in Responsive Design, another in JavaScript, FrontEnd Libraries and finally, in BackEnd & APIs. He has done multiple projects. From Video Games, to Web Pages and Web Tools.</p>
                     </div>
                 </motion.div>
             </div>

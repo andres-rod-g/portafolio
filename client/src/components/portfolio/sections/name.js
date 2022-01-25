@@ -1,5 +1,4 @@
 import Styles from '../style.module.scss'
-import video from '../../../resources/Vid.mp4'
 import { motion } from "framer-motion"
 
 const titleVariants = {

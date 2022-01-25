@@ -74,7 +74,7 @@ $fontColor: #0D1323;
 // HOME
 .dividerHomeSVG {
     position: absolute;
-    bottom: -0.1vh;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -109,7 +109,7 @@ $fontColor: #0D1323;
 
 .dividerAboutSVG {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -141,7 +141,7 @@ $fontColor: #0D1323;
 
 .dividerKnowledgeSVG {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -163,7 +163,7 @@ $fontColor: #0D1323;
 // PROJECTS
 .dividerProjectsSVG {
     position: absolute;
-    bottom: 0;
+    bottom: -1.5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -194,7 +194,7 @@ $fontColor: #0D1323;
 
 .dividerCertsSVG {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -254,5 +254,9 @@ $fontColor: #0D1323;
     .image {
         max-width: 500px;
         max-height:auto;
+    }
+
+    .aboutContainer {
+        width: 80vw;
     }
 }
