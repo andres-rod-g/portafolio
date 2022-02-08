@@ -12,7 +12,7 @@ export default () => {
                 <div className={Styles.sectionBlackContent}>
                     <h1>Contact</h1>
                     <p>Email</p>
-                    <p>01mwkp@gmail.com</p>
+                    <p>me@mwkp.online</p>
                     <h2>Or</h2>
                     <div className={Styles.buttonContainer}>
                         <motion.a href='https://twitter.com/_andres_rod' initial={{scale: 1}} whileHover={{scale: 1.125}} whileTap={{scale: 0.9}}><div><FontAwesomeIcon icon={faTwitter}/></div></motion.a>
